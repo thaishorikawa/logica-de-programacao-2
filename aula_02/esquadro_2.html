@@ -1,0 +1,22 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function esquadro(xx, yy, xz, yz, cor) {
+        pincel.fillStyle= cor;
+        pincel.beginPath();
+        pincel.moveTo(xx, yy);
+        pincel.lineTo(xx, yz);
+        pincel.lineTo(xz, yz);
+        pincel.fill();
+
+
+}
+
+esquadro(50, 50, 400, 400, "black");
+esquadro(100, 175, 275, 350, "white");
+
+</script>
