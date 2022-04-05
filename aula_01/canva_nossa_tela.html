@@ -1,0 +1,14 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    //precisa vir a cor primeiro
+    pincel.fillStyle = 'lightgrey'; //não é uma função, recebe uma propriedade, como se fosse uma variável
+    // o atributo do pincel aceita receber um valor, que é uma cor
+    pincel.fillRect(0, 0, 600, 400);
+    
+
+</script>

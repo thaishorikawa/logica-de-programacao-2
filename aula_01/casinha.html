@@ -1,0 +1,29 @@
+<canvas width="500" height="500"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgrey';
+    pincel.fillRect(0, 0, 1000, 1000);
+
+    pincel.fillStyle = 'orange';
+    pincel.beginPath(); //chamo a função pra começar a desenhar meu caminho
+    pincel.moveTo(200, 100);
+    pincel.lineTo(100, 200);
+    pincel.lineTo(200, 200);
+    pincel.fill(); //pedir pra preencher
+
+    pincel.fillStyle = 'purple';
+    pincel.fillRect(100, 200, 100, 200);
+
+    pincel.fillStyle = 'orange';
+    pincel.fillRect(200, 200, 200, 200);
+
+    pincel.fillStyle = 'purple';
+    pincel.fillRect(200, 100, 200, 100);
+    pincel.fillRect(260, 260, 80, 80);
+   
+
+</script>
